@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diferencia SIP</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="calculadoraSIP.css">
+  </head>
+<body>
+  <div class="header">
+    <img src="logo.png" alt="Título" style="width: 100px; height: auto;">
+    <h1>Diferencia SIP</h1>
+  </div>
+</head>
+  <!-- Agrega un formulario con un combobox para seleccionar el cargo -->
+    <form id="salaryForm">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="cargo">Selecciona un cargo:</label>
+        <select id="cargo" onchange="mostrarValores()">
+          <!-- Las opciones se llenarán dinámicamente desde la hoja de cálculo -->
+        </select>
+      </div>
+      
+    </div>
+    <button type="submit">Calcular dif. SIP</button>
+  </form>
+
+  <!-- Divs para mostrar los valores seleccionados -->
+  <div id="porcentualidad"></div>
+  <div id="variables" class="variables-container"></div>
+
+  <!-- Script para cargar los datos desde la hoja de cálculo y manejar los eventos -->
+  <script>
+    // ID de la hoja de cálculo de Google Sheets
+    var spreadsheetId = "1wK_ixUT5gE3wpaLRr3UcBuSjZfULqBlbymigHKYBlQc";
+
+    // API Key de Google Sheets (asegúrate de configurarla correctamente en la consola de Google Cloud)
+    var apiKey = "AIzaSyDuaFOdObRzoSKRf1Tf7LNhF2sLB-RWek4";
+
+    // Función para cargar los datos de la hoja de cálculo y llenar el combobox
+    function loadSheetData() {
+      var url = "https://sheets.googleapis.com/v4/spreadsheets/" + spreadsheetId + "/values/A2:C?key=" + apiKey;
+      $.get(url, function(data) {
+        var cargoSelect = document.getElementById("cargo");
+        var values = data.values;
+        values.forEach(function(row) {
+          var cargo = row[0];
+          var option = document.createElement("option");
+          option.text = cargo;
+          cargoSelect.add(option);
+        });
+      });
+    }
+
+    // Muestra los valores de porcentualidad y básico del cargo seleccionado
+    function mostrarValores() {
+      var cargoSelect = document.getElementById("cargo");
+      var selectedCargo = cargoSelect.options[cargoSelect.selectedIndex].text;
+
+      var url = "https://sheets.googleapis.com/v4/spreadsheets/" + spreadsheetId + "/values/A2:C?key=" + apiKey;
+      $.get(url, function(data) {
+        var values = data.values;
+        values.forEach(function(row) {
+          var cargo = row[0];
+          var porcentualidad = row[1];
+          var basico = row[2];
+          if (cargo === selectedCargo) {
+            document.getElementById("porcentualidad").innerText = "Porcentualidad: " + porcentualidad;
+            document.getElementById("basico").innerText = "Básico: " + basico;
+          }
+        });
+      });
+    }
+
+    // Carga los datos de la hoja de cálculo al cargar la página
+    document.addEventListener("DOMContentLoaded", function() {
+      loadSheetData();
+    });
+
+    // Calcula el salario y muestra los valores de las variables
+    document.getElementById("salaryForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Evita el envío del formulario
+
+      var valorCargo = parseFloat(document.getElementById("porcentualidad").innerText.split(": ")[1]);
+      
+      var SIPRemunNoBonif = 47793.24;
+            
+      var Reclamado = SIPRemunNoBonif * valorCargo /26.74
+      
+      var Perdido = Reclamado-SIPRemunNoBonif
+
+      
+      // Muestra los valores de las variables
+      var variablesDiv = document.getElementById("variables");
+      variablesDiv.innerHTML = `
+      
+      <div>SIP Remun. No Bonif: <div class="large-text">$${SIPRemunNoBonif.toFixed(2)}</div></div>
+        <div>Reclamado: <div class="large-text">$${Reclamado.toFixed(2)}</div></div>
+        <div>Perdido: <div class="large-text red-text">$${Perdido.toFixed(2)}</div></div>   
+      `;
+    });
+  </script>
+</body>
+</html>
