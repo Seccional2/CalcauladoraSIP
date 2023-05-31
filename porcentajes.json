@@ -1,0 +1,294 @@
+    {
+        "cargos": [
+            {
+                "titulo": "Juez de Camara",
+                "porcentaje": 100,
+                "ajustePorcentual": "178733.13"
+            },
+            {
+                "titulo": "Fiscal de Cámara",
+                "porcentaje": 100,
+                "ajustePorcentual": "178733.13"
+            },
+            {
+                "titulo": "Defensor de Camara",
+                "porcentaje": 100,
+                "ajustePorcentual": "178733.13"
+            },
+            {
+                "titulo": "Asesor Tutelar de Camara",
+                "porcentaje": 100,
+                "ajustePorcentual": "178733.13"
+            },
+            {
+                "titulo": "Consejero",
+                "porcentaje": 100,
+                "ajustePorcentual": "178733.13"
+            },
+            {
+                "titulo": "Secretario General de 2da Inst. del Min. Pub.",
+                "porcentaje": 100,
+                "ajustePorcentual": "178733.13"
+            },
+            {
+                "titulo": "Administrador General",
+                "porcentaje": 90,
+                "ajustePorcentual": "160859.82"
+            },
+            {
+                "titulo": "Juez de 1º Instancia",
+                "porcentaje": 82.64,
+                "ajustePorcentual": "147705.06"
+            },
+            {
+                "titulo": "Defensor de 1º Instancia",
+                "porcentaje": 82.64,
+                "ajustePorcentual": "147705.06"
+            },
+            {
+                "titulo": "Fiscal de 1º Instancia",
+                "porcentaje": 82.64,
+                "ajustePorcentual": "147705.06"
+            },
+            {
+                "titulo": "Asesor Tutelar ante los Juzgados de 1º Inst.",
+                "porcentaje": 82.64,
+                "ajustePorcentual": "147705.06"
+            },
+            {
+                "titulo": "Secretario Judicial",
+                "porcentaje": 82.64,
+                "ajustePorcentual": "147705.06"
+            },
+            {
+                "titulo": "Secretario General de 1a Instancia",
+                "porcentaje": 82.64,
+                "ajustePorcentual": "147705.06"
+            },
+            {
+                "titulo": "Secretario General de Camara",
+                "porcentaje": 70.6,
+                "ajustePorcentual": "126185.59"
+            },
+            {
+                "titulo": "Secretario de Sala de Camara",
+                "porcentaje": 70.6,
+                "ajustePorcentual": "126185.59"
+            },
+            {
+                "titulo": "Secretario Letrado",
+                "porcentaje": 70.6,
+                "ajustePorcentual": "126185.59"
+            },
+            {
+                "titulo": "Secretario de Fiscalia de Camara",
+                "porcentaje": 70.6,
+                "ajustePorcentual": "126185.59"
+            },
+            {
+                "titulo": "Secretario de Defensoria de Camara",
+                "porcentaje": 70.6,
+                "ajustePorcentual": "126185.59"
+            },
+            {
+                "titulo": "Secretario de Asesoria de Camara",
+                "porcentaje": 70.6,
+                "ajustePorcentual": "126185.59"
+            },
+            {
+                "titulo": "Prosecretario de Camara/Letrado",
+                "porcentaje": 64.53,
+                "ajustePorcentual": "115336.49"
+            },
+            {
+                "titulo": "Secretario de juzgado de 1º Instancia",
+                "porcentaje": 64.53,
+                "ajustePorcentual": "115336.49"
+            },
+            {
+                "titulo": "Secretario de Fiscalía de 1º Instancia",
+                "porcentaje": 64.53,
+                "ajustePorcentual": "115336.49"
+            },
+            {
+                "titulo": "Secretario de Defensoría de 1º Instancia",
+                "porcentaje": 64.53,
+                "ajustePorcentual": "115336.49"
+            },
+            {
+                "titulo": "Secretario de asesoría 1º Instancia",
+                "porcentaje": 64.53,
+                "ajustePorcentual": "115336.49"
+            },
+            {
+                "titulo": "Secretario Coadyuvante",
+                "porcentaje": 60.63,
+                "ajustePorcentual": "108365.90"
+            },
+            {
+                "titulo": "Secretario Administrativo",
+                "porcentaje": 56.96,
+                "ajustePorcentual": "101806.39"
+            },
+            {
+                "titulo": "Prosecretario Jefe",
+                "porcentaje": 52.87,
+                "ajustePorcentual": "94496.21"
+            },
+            {
+                "titulo": "Prosecretario Administrativo de Camara/Fisc/Def/Ase",
+                "porcentaje": 50.58,
+                "ajustePorcentual": "90403.22"
+            },
+            {
+                "titulo": "Prosecretario Coadyuvante de 1º Instancia",
+                "porcentaje": 50.58,
+                "ajustePorcentual": "90403.22"
+            },
+            {
+                "titulo": "Prosecretario Adminitrativo de 1º Instancia",
+                "porcentaje": 47.08,
+                "ajustePorcentual": "84147.56"
+            },
+            {
+                "titulo": "Jefe de Despacho de 1º",
+                "porcentaje": 41.63,
+                "ajustePorcentual": "74406.60"
+            },
+            {
+                "titulo": "ON- Oficial Notificador",
+                "porcentaje": 40.96,
+                "ajustePorcentual": "73209.09"
+            },
+            {
+                "titulo": "Oficial Mayor",
+                "porcentaje": 38.48,
+                "ajustePorcentual": "68776.51"
+            },
+            {
+                "titulo": "Relator",
+                "porcentaje": 36.97,
+                "ajustePorcentual": "66077.64"
+            },
+            {
+                "titulo": "Secretario Privado de Juez de 1º Inst",
+                "porcentaje": 36.97,
+                "ajustePorcentual": "66077.64"
+            },
+            {
+                "titulo": "Oficial",
+                "porcentaje": 36.97,
+                "ajustePorcentual": "66077.64"
+            },
+            {
+                "titulo": "Escribiente Primero",
+                "porcentaje": 34.15,
+                "ajustePorcentual": "61037.37"
+            },
+            {
+                "titulo": "Escribiente",
+                "porcentaje": 33.08,
+                "ajustePorcentual": "59124.92"
+            },
+            {
+                "titulo": "Auxiliar",
+                "porcentaje": 28.22,
+                "ajustePorcentual": "50438.49"
+            },
+            {
+                "titulo": "Auxiliar de Servicio",
+                "porcentaje": 26.74,
+                "ajustePorcentual": "47793.24"
+            },
+            {
+                "titulo": "Categoria 1",
+                "porcentaje": 82.64,
+                "ajustePorcentual": "147705.06"
+            },
+            {
+                "titulo": "Categoria 2",
+                "porcentaje": 76.59,
+                "ajustePorcentual": "136891.71"
+            },
+            {
+                "titulo": "Categoria 3 - Secretario Let. Unidad Cons.",
+                "porcentaje": 70.6,
+                "ajustePorcentual": "126185.59"
+            },
+            {
+                "titulo": "Categoria 4",
+                "porcentaje": 64.53,
+                "ajustePorcentual": "115336.49"
+            },
+            {
+                "titulo": "Categoria 5",
+                "porcentaje": 60.63,
+                "ajustePorcentual": "108365.90"
+            },
+            {
+                "titulo": "Categoria 6",
+                "porcentaje": 56.96,
+                "ajustePorcentual": "101806.39"
+            },
+            {
+                "titulo": "Categoria 7",
+                "porcentaje": 52.87,
+                "ajustePorcentual": "94496.21"
+            },
+            {
+                "titulo": "Categoria 8",
+                "porcentaje": 49.87,
+                "ajustePorcentual": "89134.21"
+            },
+            {
+                "titulo": "Categoria 9",
+                "porcentaje": 48.04,
+                "ajustePorcentual": "85863.40"
+            },
+            {
+                "titulo": "Categoria 10",
+                "porcentaje": 47.08,
+                "ajustePorcentual": "84147.56"
+            },
+            {
+                "titulo": "Categoria 11",
+                "porcentaje": 41.63,
+                "ajustePorcentual": "74406.60"
+            },
+            {
+                "titulo": "Categoria 12",
+                "porcentaje": 38.48,
+                "ajustePorcentual": "68776.51"
+            },
+            {
+                "titulo": "Categoria 13",
+                "porcentaje": 37.19,
+                "ajustePorcentual": "66470.85"
+            },
+            {
+                "titulo": "Categoria 14",
+                "porcentaje": 35.35,
+                "ajustePorcentual": "63182.16"
+            },
+            {
+                "titulo": "Categoria 15",
+                "porcentaje": 34.15,
+                "ajustePorcentual": "61037.37"
+            },
+            {
+                "titulo": "Categoria 16",
+                "porcentaje": 32.28,
+                "ajustePorcentual": "57695.06"
+            },
+            {
+                "titulo": "Categoria 17",
+                "porcentaje": 28.22,
+                "ajustePorcentual": "50438.49"
+            },
+            {
+                "titulo": "Categoria 18",
+                "porcentaje": 26.74,
+                "ajustePorcentual": "47793.24"
+            }
+        ]
+    }
