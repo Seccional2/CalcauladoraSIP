@@ -39,6 +39,45 @@ function handleClick() {
   const divPorcLabel = document
     .getElementById("porcentualidad-row")
     .removeAttribute("hidden");
+  const divExtras = document
+    .getElementById("extras-row")
+    .removeAttribute("hidden");
+  const divTotalPerdido = document
+    .getElementById("extras-row")
+    .removeAttribute("hidden");
   divPorc.innerText = `$${suplementoSIP}`;
   divAjuste.innerText = `$${cargos[tituloIndex].ajustePorcentual}`;
+  divPorc.innerText = `$${suplementoSIP}`;
+}
+
+function handleClickTotal() {
+  const antiguedad = document.getElementById("antiguedad").value;
+  const permanencia = document.getElementById("permanencia").value;
+  const titulo = document.getElementById("titulo").value;
+  const perdido = document.getElementById("total-perdido");
+  const tituloIndex = document.getElementById("cargos").value;
+  const ajustePorcentual = cargos[tituloIndex].ajustePorcentual;
+  var caraLlorando = "\u{1F622}"; // Utilizamos la secuencia de escape Unicode
+  const sumaPerdido =
+    (2 * antiguedad * ajustePorcentual) / 100 +
+    (10 * permanencia * ajustePorcentual) / 100 +
+    (titulo * ajustePorcentual) / 100;
+  perdido.innerText = `${caraLlorando} $${sumaPerdido.toFixed(
+    2
+  )} ${caraLlorando}`;
+}
+
+function handleChange() {
+  const divAjusteLabel = document
+    .getElementById("ajuste-prop-row")
+    .setAttribute("hidden", "true");
+  const divPorcLabel = document
+    .getElementById("porcentualidad-row")
+    .setAttribute("hidden", "true");
+  const divExtras = document
+    .getElementById("extras-row")
+    .setAttribute("hidden", "true");
+  const divTotalPerdido = document
+    .getElementById("extras-row")
+    .setAttribute("hidden", "true");
 }

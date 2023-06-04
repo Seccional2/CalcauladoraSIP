@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" charset="UTF-8">
 </head>
 
 <body>
@@ -17,28 +17,68 @@
       <h1>Diferencia SIP</h1>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col my-1 label">
-          Selecciona tu cargo:
-        </div>
-        <div class="col my-3">
-          <div>
-            <select class="cargos" id="cargos"> </select>
+      <div class="row flex-column">
+        <div class="col label">
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Cargo:</label>
+            </div>
+            <select class="custom-select cargos" id="cargos" onchange="handleChange()">
+            </select>
           </div>
         </div>
+        <div class="col d-flex justify-content-center">
+          <button type="button" class="btn btn-primary porcent btn-sm" onclick="handleClick()">Ver Ajuste
+            Porcentualidad</button>
+        </div>
       </div>
-      <div class="col my-2 d-flex justify-content-center">
-        <button type="button" class="btn btn-primary" onclick="handleClick()">Ver Ajuste Porcentualidad</button>
+
+      <div class="row flex-column" hidden id="porcentualidad-row">
+        <div class="col mb-1 d-flex justify-content-center" id="porcentualidad-label">SIP:
+        </div>
+        <div class="col mb-1 d-flex justify-content-center" id="porcentualidad" class="porcentualidad">
+        </div>
       </div>
-    </div>
-    <div class="row flex-column" hidden id="porcentualidad-row">
-      <div class="col my-1 d-flex justify-content-center" id="porcentualidad-label" class="porcentualidad-label">SIP: </div>
-      <div class="col my-1 d-flex justify-content-center" id="porcentualidad" class="porcentualidad">
+      <div class="row flex-column" id="ajuste-prop-row" hidden>
+        <div class="col mb-1 d-flex justify-content-center" id="ajuste-prop-label" class="ajuste-prop-label"> Con
+          ajuste
+          porcentual:</div>
+        <div class="col mb-1 d-flex justify-content-center" id="ajuste-prop" class="ajuste-prop"></div>
       </div>
-    </div>
-    <div class="row flex-column" id="ajuste-prop-row" hidden>
-      <div class="col my-1 d-flex justify-content-center" id="ajuste-prop-label" class="ajuste-prop-label"> Con ajuste porcentual:</div>
-      <div class="col my-1 d-flex justify-content-center" id="ajuste-prop" class="ajuste-prop">
+      <div class="row flex-column" id="extras-row" hidden>
+        <div class="col mb-3 d-flex justify-content-center extras-title" id="porcentualidad-label">Y
+          queres saber cuanto estas perdiendo en total si el SIP estuviera incluído en tu básico?
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Antiguedad</span>
+          </div>
+          <input id="antiguedad" type="number" class="form-control" aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm" placeholder="Cuantos años de antiguedad tenes">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Permanencia</span>
+          </div>
+          <input id="permanencia" type="number" class="form-control" aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm" placeholder="Cuantas permanencias tenes">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect02">Título</label>
+          </div>
+          <select class="custom-select" id="titulo">
+            <option value="10">Secundario</option>
+            <option value="15">Terciario</option>
+            <option value="25">Universitario</option>
+          </select>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <button type="button" class="btn btn-primary porcent btn-sm" onclick="handleClickTotal()">Cuánto me
+            pierdo?</button>
+        </div>
+        <div class="col my-3 d-flex justify-content-center" id="total-perdido" class="total-perdido" hidden>
+        </div>
       </div>
     </div>
   </div>

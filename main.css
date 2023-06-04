@@ -64,13 +64,24 @@
   font-size: x-large;
 }
 
-#ajuste-prop-row {
+.extras-title {
+  margin-bottom: 50px;
+}
+
+.porcent {
+  background-color: #873d0a !important;
+  border-color: #873d0a !important;
+}
+
+#ajuste-prop-row,
+#total-perdido {
   font-weight: 600;
   font-size: xx-large;
   color: red;
 }
+
 @media only screen and (max-width: 767px) {
   .cargos {
-    font-size: 30px;
+    font-size: 20px !important;
   }
 }
