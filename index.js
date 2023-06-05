@@ -57,8 +57,9 @@ function handleClickTotal() {
   const perdido = document.getElementById("total-perdido");
   const tituloIndex = document.getElementById("cargos").value;
   const ajustePorcentual = cargos[tituloIndex].ajustePorcentual;
-  var caraLlorando = "\u{1F622}"; // Utilizamos la secuencia de escape Unicode
-  const sumaPerdido = ajustePorcentual + 
+  var caraLlorando = "\u{1F622}";
+  const sumaPerdido =
+    parseFloat(ajustePorcentual) +
     (2 * antiguedad * ajustePorcentual) / 100 +
     (10 * permanencia * ajustePorcentual) / 100 +
     (titulo * ajustePorcentual) / 100;
