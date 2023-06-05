@@ -58,7 +58,7 @@ function handleClickTotal() {
   const tituloIndex = document.getElementById("cargos").value;
   const ajustePorcentual = cargos[tituloIndex].ajustePorcentual;
   var caraLlorando = "\u{1F622}"; // Utilizamos la secuencia de escape Unicode
-  const sumaPerdido =
+  const sumaPerdido = ajustePorcentual + 
     (2 * antiguedad * ajustePorcentual) / 100 +
     (10 * permanencia * ajustePorcentual) / 100 +
     (titulo * ajustePorcentual) / 100;
@@ -68,16 +68,11 @@ function handleClickTotal() {
 }
 
 function handleChange() {
-  const divAjusteLabel = document
-    .getElementById("ajuste-prop-row")
-    .setAttribute("hidden", "true");
-  const divPorcLabel = document
-    .getElementById("porcentualidad-row")
-    .setAttribute("hidden", "true");
-  const divExtras = document
-    .getElementById("extras-row")
-    .setAttribute("hidden", "true");
-  const divTotalPerdido = document
-    .getElementById("extras-row")
-    .setAttribute("hidden", "true");
+  document.getElementById("ajuste-prop-row").setAttribute("hidden", "true");
+  document.getElementById("porcentualidad-row").setAttribute("hidden", "true");
+  document.getElementById("extras-row").setAttribute("hidden", "true");
+  document.getElementById("extras-row").setAttribute("hidden", "true");
+  document.getElementById("antiguedad").value = "";
+  document.getElementById("permanencia").value = "";
+  document.getElementById("titulo").value = "";
 }
